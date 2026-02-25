@@ -1,5 +1,4 @@
- Multithreaded Performance Analysis using Linux perf
-
+**Multithreaded Performance Analysis using Linux perf**
 This project explores multithreaded systems programming in a Linux environment using C, POSIX threads (`pthread`), and the Linux `perf` tool. The main goal was to understand how different types of workloads behave when multiple threads run concurrently, and how low-level system metrics help uncover performance bottlenecks.
 
 I built four separate multithreaded programs, each designed to stress the system in a different way. The CPU-bound program focuses on heavy computations to fully utilize processor cores. The memory-bound version repeatedly accesses large data structures to study memory bandwidth and cache performance. The I/O-bound program performs frequent file operations to observe I/O wait time and system overhead. A mixed workload combines computation, memory access, and I/O to resemble more realistic application behavior.
